@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OU Revised Time Table</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            margin: 50px;
+        }
+        .hidden {
+            display: none;
+        }
+    </style>
+</head>
+<body>
+    <h1>Osmania University</h1>
+    <h2>Revised Time Table of UG B.Com I, II & III Year - June/July 2024</h2>
+    <a href="#" id="prank-link">Click here to view the revised time table</a>
+    <div id="prank-content" class="hidden">
+        <img src="monkey.jpg" alt="Monkey" style="width: 300px; height: auto;">
+        <p>??????? ????, ??????? ???????? ?????!</p>
+    </div>
+    <script>
+        document.getElementById('prank-link').addEventListener('click', function(event) {
+            event.preventDefault();
+            document.getElementById('prank-content').classList.remove('hidden');
+            document.getElementById('prank-link').classList.add('hidden');
+        });
+    </script>
+</body>
+</html>
